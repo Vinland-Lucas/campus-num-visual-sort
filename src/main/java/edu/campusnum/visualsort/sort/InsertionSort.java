@@ -14,10 +14,10 @@ public class InsertionSort  implements SortAlgorithm{
         int n = array.getLength();
 
         for (int i = 1; i < n; i++) {
-            int temps = array.get(i);
+            int temp = array.get(i);
             int j = i;
 
-            while (j > 0 && array.get(j - 1) > temps) {
+            while (j > 0 && array.get(j - 1) > temp) {
                 array.swap(j, j-1);
                 j = j - 1;
             }

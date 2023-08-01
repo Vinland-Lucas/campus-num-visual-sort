@@ -12,18 +12,20 @@ public class BubbleSort implements SortAlgorithm{
     @Override
     public void sort(ObservableArray array) {
         int n = array.getLength();
-        int i, j;
-        boolean swapped;
-        for (i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (j = 0; j < n - i - 1; j++) {
-                if (array.get(j) > array.get(j + 1)) {
-                    array.swap(j, j + 1);
-                    swapped = true;
+        int passage = 0;
+        boolean permut = true;
+
+        while (permut == true) {
+            permut = false;
+
+            for (int i = 0; i < n-1; i++) {
+                if (array.get(i) > array.get(i + 1)) {
+                    array.swap(i, i+1);
+                    permut = true;
                 }
             }
-            if (!swapped)
-                break;
+
+            passage = passage + 1;
         }
     }
 }

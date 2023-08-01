@@ -18,7 +18,7 @@ public class InsertionSort  implements SortAlgorithm{
             int j = i;
 
             while (j > 0 && array.get(j - 1) > temp) {
-                array.swap(j, j-1);
+                array.swap(j, j-1); // permet de swap l'index gauche à celui de droite si la condition de boucle est respectée
                 j = j - 1;
             }
         }

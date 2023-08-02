@@ -26,11 +26,9 @@ public class ShellSort implements SortAlgorithm{
                 int j = i;
 
                 while (j > n - 1 && array.get(j - n) > valeur) {
-                    array.get(j) = array.get(j - n);
+                    array.swap(j, j-n);
                     j = j - n;
                 }
-
-                array.get(j) = valeur;
             }
         }
 

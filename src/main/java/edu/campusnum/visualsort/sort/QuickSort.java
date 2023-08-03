@@ -21,6 +21,8 @@ public class QuickSort implements SortAlgorithm{
         //throw new UnsupportedOperationException("Not implemented");
     }
 
+    // Cette méthode appelle la méthode "partionner" et la stock dans une variable
+    // L'utilité de "tri_rapide" va permettre de trier les 2 parties du tableau partitionné
     public void tri_rapide(ObservableArray array, int first, int last) {
         if (first < last) {
             int pi = partitionner(array, first, last);
@@ -29,6 +31,8 @@ public class QuickSort implements SortAlgorithm{
         }
     }
 
+    // Cette méthode va partitionner le tableau en deux parties, l'une de chaque côté du tableau
+    // A gauche les éléments + petits que le pivot, à droite ceux plus grands que le pivot
     public int partitionner(ObservableArray array, int first, int last) {
         int pivot = last;
         int j = (first - 1);

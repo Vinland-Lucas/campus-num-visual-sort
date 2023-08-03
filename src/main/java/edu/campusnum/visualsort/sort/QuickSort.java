@@ -9,6 +9,15 @@ import edu.campusnum.visualsort.model.Order;
  * Date: 27/07/2023
  * Time: 16:31
  */
+
+/*
+Ressources :
+http://lwh.free.fr/pages/algo/tri/tri_rapide.html
+https://www.geeksforgeeks.org/quick-sort/
+https://www.youtube.com/watch?v=PgBzjlCcFvc
+https://www.youtube.com/watch?v=WprjBK0p6rw
+*/
+
 public class QuickSort implements SortAlgorithm{
     @Override
     public void sort(ObservableArray array) {

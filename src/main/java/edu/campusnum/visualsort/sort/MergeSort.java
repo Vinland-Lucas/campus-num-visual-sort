@@ -9,6 +9,15 @@ import edu.campusnum.visualsort.model.Order;
  * Date: 27/07/2023
  * Time: 16:31
  */
+
+/*
+    Ressources :
+    https://www.geeksforgeeks.org/merge-sort/
+    http://lwh.free.fr/pages/algo/tri/tri_fusion.html
+    https://cdn.discordapp.com/attachments/1128231146006782003/1136634189882605608/20230802_162147.jpg
+    https://www.youtube.com/watch?v=3j0SWDX4AtU
+ */
+
 public class MergeSort implements SortAlgorithm{
     @Override
     public void sort(ObservableArray array) {

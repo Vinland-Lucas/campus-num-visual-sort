@@ -22,8 +22,6 @@ public class QuickSort implements SortAlgorithm{
     }
 
     public void tri_rapide(ObservableArray array, int first, int last) {
-        //int length = array.getLength();
-
         if (first < last) {
             int pi = partitionner(array, first, last);
             tri_rapide(array, first, pi-1);
@@ -39,11 +37,10 @@ public class QuickSort implements SortAlgorithm{
             if (array.compare(pivot, i).equals(Order.Higher)) {
                 j = j + 1;
                 array.swap(i, j);
-
             }
         }
 
-        array.swap(j+ 1, pivot);
+        array.swap(j + 1, pivot);
 
         return (j + 1);
     }
